@@ -19,12 +19,13 @@ describe('index.js', function() {
     it("is an equation that calculates a remainder that is equal to 4", function() {
       expect(num3).to.be.a('number')
       expect(num4).to.be.a('number')
-      expect(mod).to.eq(4)
+      expect(mod(num3, num4)).to.eq(4)
     });
   });
   describe('max', function() {
     it("will return 20 as the highest number in the set", function() {
-      expect(max).to.eq(20)
+      expect(max(10, 20)).to.eq(20)
     });
   });
 });
+ 
